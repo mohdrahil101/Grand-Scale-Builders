@@ -1,0 +1,101 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: linear-gradient(to bottom right,#ad3ffb,#4400c9 );
+    background-attachment: fixed;
+    /* overflow: hidden; */
+}
+body  main{
+    background-color: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+main .cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #ffffff;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+
+main .cont .image{
+    display: none;
+    position: relative;
+    background-image: url(/images/login.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16px;
+    color: #ffffff;
+    
+    height: 100%;
+}
+main .cont .image .shade {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#ad3ffb,#4400c9 );
+    opacity: .8;
+    color: #ffffff;
+    padding: 16px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+main .cont form{
+    padding: 16px;
+    height: 100%;
+    overflow-y: scroll;
+}
+main .cont h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+form input:not([type="checkbox"]){
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #888;
+    outline: none;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: 0.4s;
+}
+form input[type="checkbox"]{
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+}
+form input:focus{
+    border-bottom: 2px solid #4400c9;
+}
+form input[type="submit"]{
+    border: none;
+    background-color: #4400c9;
+    color:#ffffff;
+    border-radius:8px ;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 8px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    main .cont{
+        grid-template-columns: 1.5fr 1fr;
+        max-width: 60%;
+    }
+    main .cont .image{
+        display: block;
+    }
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.dark{
+    background-color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b142ec;;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4500CA;
+}
+
+.navbar {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding: 32px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    overflow-x: scroll;
+}
+.dark .navbar {
+    color:white
+}
+.navbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background: #b142ec;;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4500CA;
+}
+
+.navbar .menu-content .app-title {
+    display: none;
+}
+
+.scroll {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.dark .scroll{
+    background-color: black;
+    color: white;
+}
+
+.navbar .menu-content {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.navbar .menu-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.navbar .menu-items a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dark .navbar .menu-items a {
+    color: wheat;
+}
+.scroll .menu-items a {
+    color: black;
+    display: inline;
+}
+
+.navbar .menu-items a:hover, .active {
+    color: #ff25ab;
+    border-bottom: 2px solid #ff25ab;
+
+}
+
+.container {
+    margin: auto !important;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0px 16px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .navbar .menu-content .app-title {
+        display: block;
+    }
+    .navbar .menu-items{
+        column-gap: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 70%;
+    }
+
+
+}

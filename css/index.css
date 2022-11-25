@@ -1,0 +1,132 @@
+.page-header {
+    background-image: linear-gradient(#4500CA 4%, rgba(69,0,202,0) 50%), url(/images/bg.jpg), linear-gradient(60deg, #28005f 16%, #8300e5 64%, #0f3bff 100%);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.ph{
+    padding: 1em;
+    text-align: center;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.ph .details{
+    z-index: 50;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.page-header .title{
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
+.page-header .description{
+    font-size: 30px;
+    font-weight: 600;
+    color:white;
+}
+.page-header a.button{
+  background: linear-gradient(120deg,rgba(143,66,236,0),#812bea);
+  background-color: #b142ec;
+  font-size: 15px;
+  padding: 12px 32px;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  transition: ease 0.3s;
+}
+.page-header .ph .details a:hover{
+  background-image: linear-gradient(120deg,#812bea,#ad40ec);
+  transform: scale(1.1);
+}
+
+
+
+.wedo{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 16px;
+    align-items: center;
+    vertical-align: middle;
+    border: 2px solid white;
+    box-shadow: 2px 2px 30px 5px rgba(162, 71, 241, 0.2);
+    padding: 30px;
+    margin: 30px 16px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+.dark .wedo{
+  border: 2px solid rgb(71, 71, 71);
+}
+
+.wedo h1{
+  font-size: 40px;
+}
+.wedo p{
+  color: #6d7c90;
+}
+.wedo .image{
+  align-items:flex-end;
+  text-align: right;
+}
+.wedo img{
+  max-height: 400px;
+  max-width: 300px;
+  border-radius: 25px;
+}
+
+
+
+/* projects */
+.projects h1{
+  border:2px dotted #812bea;
+  border-left: 5px solid #812bea;
+  padding: 8px;
+  display: inline;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .ph{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 1em;
+        height: 100vh;
+        text-align: left;
+    }
+    .page-header{
+        background-size: cover;
+        padding-top: 200px;
+    }
+    .wedo{
+      grid-template-columns: 1fr 1fr;
+    }
+    .wedo .image{
+      text-align: center;
+      align-items:center;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    .page-header{
+      height: 100vh;
+    }
+}
+
+
+
+
+
