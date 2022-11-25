@@ -28,7 +28,7 @@ main .cont{
 main .cont .image{
     display: none;
     position: relative;
-    background-image: url(/images/login.jpg) ;
+    background-image: url(./images/login.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 16px;
