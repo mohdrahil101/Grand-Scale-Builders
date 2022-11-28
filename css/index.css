@@ -31,7 +31,10 @@
     font-weight: 600;
     color:white;
 }
-.page-header a.button{
+
+
+.button{
+  display: inline-block;
   background: linear-gradient(120deg,rgba(143,66,236,0),#812bea);
   background-color: #b142ec;
   font-size: 15px;
@@ -41,11 +44,13 @@
   color: #fff;
   text-decoration: none;
   font-weight: 900;
-  transition: ease 0.3s;
+  transition: ease .3s;
 }
-.page-header .ph .details a:hover{
-  background-image: linear-gradient(120deg,#812bea,#ad40ec);
-  transform: scale(1.1);
+
+.button:hover{
+  background: linear-gradient(120deg,#812bea,rgba(143,66,236,0));
+  background-color: #b142ec;
+  transform: translate(6px);
 }
 
 
