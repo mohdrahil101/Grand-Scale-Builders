@@ -1,5 +1,5 @@
 .page-header {
-    background-image: linear-gradient(#4500CA 4%, rgba(69,0,202,0) 50%), url(./images/bg.jpg), linear-gradient(60deg, #28005f 16%, #8300e5 64%, #0f3bff 100%);
+    background-image: linear-gradient(#4500CA 4%, rgba(69,0,202,0) 50%), url("https://ik.imagekit.io/mohdrahil101/Grand-Scale-Builders_files/bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669749209128"), linear-gradient(60deg, #28005f 16%, #8300e5 64%, #0f3bff 100%);
     background-size:auto;
     background-repeat: no-repeat;
     background-position: bottom;
