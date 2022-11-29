@@ -75,6 +75,11 @@ form input:focus,form textarea:focus{
     
     grid-column-start: 1;
     grid-column-end: 2;
+    transition: ease 0.3s;
+}
+
+.submit:hover{
+    transform: scale(1.1);
 }
 form input[type="submit"]{
     border: none;
